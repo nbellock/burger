@@ -1,16 +1,15 @@
-
 <div class="row">
     {{! Burgers to eat}}
     <div class="col s6 center-align">
         <ul>
             {{#each brgr}} {{#unless this.devoured}}
-            <div class="card light-green">
-                <p>
+            <div class="card - blue-grey">
+                <p class="white-text">
                     {{this.id}}. {{this.burger_name}}
 
                     <form action="update/{{this.id}}?_method=PUT" method="POST">
                         <input type="hidden" name="devoured" value="1">
-                        <button type="submit" class="waves-effect waves-light btn green z-depth-4">DEVOUR IT!</button>
+                        <button type="submit" class="waves-effect waves-light btn blue z-depth-4">Eat It!</button>
                     </form>
 
                 </p>
@@ -23,12 +22,12 @@
     <div class="col s6 center-align">
         <ul>
             {{#each brgr}} {{#if this.devoured}}
-            <div class="card light-green lighten-2">
-                <p class="grey-text">
+            <div class="card blue-grey">
+                <p class="white-text">
                     {{this.id}}. {{this.burger_name}}
 
                     <form action="delete/{{this.id}}?_method=DELETE" method="POST">
-                        <button type="submit" class="waves-effect waves-light btn green z-depth-4">Remove</button>
+                        <button type="submit" class="waves-effect waves-light btn blue  z-depth-4">Remove</button>
                     </form>
                 </p>
             </div>
@@ -40,7 +39,7 @@
 <div class="row">
     <div class="col s3"></div>
     <div class="col s6">
-        <div class="card-panel center-align deep-purple lighten-3">
+        <div class="card-panel center-align blue-grey lighten-3">
             {{! Dropdown that allows user to only pick burgers on menu }} {{> menu/dropdown}}
         </div>
     </div>

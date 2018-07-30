@@ -1,4 +1,3 @@
-
 // var Sequelize = require('sequelize'), connection;
 // if (process.env.JAWSDB_URL) {
 //   connection = new Sequelize(process.env.JAWSDB_URL);
@@ -35,4 +34,3 @@ app.use('/', routes);
 
 var port = process.env.PORT || 3000;
 app.listen(port);
-
