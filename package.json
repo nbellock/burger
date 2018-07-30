@@ -9,13 +9,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/StefanieDing/burger.git"
+        "url": "git+https://github.com/nbellock/burger.git"
     },
     "keywords": [],
-    "author": "Stefanie Ding",
+    "author": "Nikki Bellock",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/StefanieDing/burger/issues"
+        "url": "https://github.com/nbelock/burger/issues"
     },
     "homepage": "https://github.com/nbellock/burger#readme",
     "dependencies": {
